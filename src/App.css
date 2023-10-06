@@ -1,38 +1,210 @@
-.App {
+/* 
+@import "https://cdn.quilljs.com/1.3.6/quill.snow.css";
+
+.ql-editor {
+  background-color: #f8f9fa;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.ql-snow .ql-toolbar button svg,
+.ql-snow .ql-toolbar button i {
+  color: #45a049;
+}
+
+.ql-snow .ql-toolbar button.ql-active svg,
+.ql-snow .ql-toolbar button.ql-active i,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+  color: #45a049;
+}
+
+.ql-snow .ql-toolbar {
+  border: none;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d2d2d2;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cursor-red .ql-cursor-flag,
+.cursor-red .ql-cursor-caret {
+  background-color: red;
+  border-color: red;
+}
+
+.cursor-blue .ql-cursor-flag,
+.cursor-blue .ql-cursor-caret {
+  background-color: blue;
+  border-color: blue;
+}
+
+.cursor-green .ql-cursor-flag,
+.cursor-green .ql-cursor-caret {
+  background-color: green;
+  border-color: green;
+}
+.unseen-changes-indicator {
+  background-color: #ffcccb;
+  color: #c00;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   text-align: center;
+  z-index: 1000;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .app-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* } */
+/* .todo-list-container {
+  max-width: 400px;
+  margin: auto;
+  text-align: left;
+}
+
+button {
+  background-color: #4CAF50;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #45a049;
+}
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.editor-todo-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.editor-container,
+.todo-container {
+  flex: 1;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1, h2 {
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+} */ 
+
+@import "https://cdn.quilljs.com/1.3.6/quill.snow.css";
+
+.ql-editor {
+  background-color: #f8f9fa;
+  height: 500px;
+  font-family: 'Arial', sans-serif;
+}
+
+.ql-snow .ql-toolbar button svg,
+.ql-snow .ql-toolbar button i {
+  color: #45a049;
+}
+
+.ql-snow .ql-toolbar button.ql-active svg,
+.ql-snow .ql-toolbar button.ql-active i,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+  color: #45a049;
+}
+
+.ql-snow .ql-toolbar {
+  border: none;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d2d2d2;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.unseen-changes-indicator {
+  background-color: #ffcccb;
+  color: #c00;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.todo-list-container {
+  max-width: 400px;
+  margin: auto;
+  text-align: left;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.editor-todo-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.editor-container {
+  flex: 3;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.todo-container {
+  flex: 1;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1, h2 {
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
